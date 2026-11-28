@@ -1,105 +1,58 @@
-Student Result Analysis
+# 🎓 Student Result Analysis Using Python & Streamlit
 
+## 📌 Project Overview
 
-At first we will create a virtual environment.
-The first library that we will be creating is streamlit.
+Student Result Analysis is an interactive web-based application developed using Python and Streamlit to analyze, visualize, and manage student academic performance.
 
-And then we have to install the pandas.
+The application allows users to upload student datasets and explore academic results through multiple analytical features, including student performance summaries, topper identification, individual student searches, subject-wise analysis, pass/fail evaluation, and pivot table generation.
 
-And then we will install streamlit option menu
+The project aims to simplify academic data analysis by transforming raw student marks into meaningful insights through an interactive and user-friendly dashboard.
 
-Student.py
+## 🛠️ Technologies Used
 
-After installing all the applications. We will create a file name called student.py
+- **Python** – Core programming language
+- **Streamlit** – Interactive web application development
+- **Pandas** – Data manipulation and analysis
+- **Streamlit Option Menu** – Sidebar navigation and menu customization
+- **Virtual Environment (venv)** – Project dependency management
 
-And in that page we will do page configuration at the first.
-We will add a page title as student result analysis of the website.
-As well as we will add an heading called student result analysis. 
+## ✨ Key Features
 
-Now our streamlit page is ready by setting layout and page configuration.
+### 1. Raw Data
+- Upload student datasets through the sidebar.
+- Display the uploaded dataset in tabular format.
+- Explore the original student records and subject marks.
 
-SIDEBAR
+### 2. Student Results
+- Calculate the total marks obtained by each student.
+- Calculate individual student average marks.
+- Group student records by name and marks.
+- Present student performance in an organized format.
 
-Now we will make changes in sidebar.
+### 3. Topper Analysis
+- Identify the highest-performing students based on total marks.
+- Sort student results in descending order.
+- Allow users to select the number of top-performing students to display.
+- Identify the highest scorer.
 
-And we will take the header and upload dataset.(By writing the function)
-By this we created a space in sidebar where we can upload the files of the data set.
+### 4. Search Student
+- Search for individual students using their names.
+- Perform case-insensitive searches, regardless of uppercase or lowercase input.
+- Display matching student information.
+- Show total marks, average marks, and subject-wise performance.
+- Display a student-not-found message when no matching record exists.
 
-And now we need to make an option menu. And in that we can add options 
-	◦	Raw data
-	◦	Student result
-	◦	Topper
-	◦	Search student
-	◦	Subject analysis
-	◦	Pass/fail
-	◦	Pivot table
+### 5. Subject Analysis
+- Analyze student performance across different subjects.
+- Calculate average marks for individual subjects.
+- Compare subject-wise academic performance.
 
-And we will also put icons for the above options.
+### 6. Pass/Fail Analysis
+- Allow users to select the passing marks threshold.
+- Identify students who pass or fail based on the selected criteria.
+- Display the names and results of passing and failing students.
+- Support flexible passing criteria depending on institutional requirements.
 
-Next we will make sure the file exist or not Soo by adding a if condition we will get a warning message if the file is not existed.
-
-
-Read Data
-
-We will create a data frame in which it will make sure to read the uploaded file.
-
-We will take the if statement which makes if selected data is raw data we will get a sub header as a raw data.
-
-And then when we upload a file. The raw data will be displayed. 
-
-After this
-
-Student results
-
-We will make sure the student result will be displayed in a very good way
-
-Soo we will use a Elif condition and take student result from the sidebar for the location.
-Then we will make sure the total of the data frame will be grouped by name and marks 
-Same for the average will be grouped by name and marks. 
-
-After writing this code we will get the completely sorted section in the student results location from the sidebar. 
-
-Topper
-
-We will use the elif tag again by mentioning topper 
-And we will get the total from the data frame and group it by name and marks by sorting the values in descending order.
-
-And we will make sure yo mention that we need a single topper.
-And we will make sure that it will ask how many students we want in the top. 
-
-Search student
-
-Again we will use elif by mentioning search student 
-We will put a text tag which says enter a student name. 
-We will make sure to put a code where user input doesn’t matter by putting capital or small letters. 
-Soo that we will get it filtered. 
-
-And we will put a if condition saying that after filtered if there is no empty then it will display as showing result by the name and their marks and average. 
-
-If we search a name we should get all the details from the data set.( by getting total,avg and marks ) 
-
-If the if condition is not able to find the student name then it will show student not found. 
-
-Subject Analysis: 
-
-We will use a elif and mention subject analysis. 
-We will group subject and their average from the data set which will show marks and subject name. 
-
-We will also make sure subject wise average is also shown. 
-
-Pass/Fail
-
-We will make sure pass or fail students.
-
-Where passing marks is based on each different schools or university
-
-Soo we will make sure to give the passing marks selection for the users itself.
-
-Soo that the answers which we will get will be correct. 
-We will apply if condition and make sure to get the passing and failing marks and make sure that the students names get visible.
-
-Pivot Table
-
-We will use the elif condition by mentioning pivot table. 
-And write the code for it . 
-Which will show student vs subjects.
+### 7. Pivot Table
+- Generate an interactive student-versus-subject performance table.
+- Organ
